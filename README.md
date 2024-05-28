@@ -28,9 +28,17 @@ export default function CategoryIcon(){
     -se muestran las categorias de los productos en el sidebar.
     -cada categoría ya aparece con su nombre de categoría y su respectiva imagen.
     
-## [v1.2.0] - 2024-05-28
+## [v1.3.0] - 2024-05-28
 
 ### Añadido
 
     -implementamos routin dinámico para cada categoría, cada que se presiona sobre una categoría va a su dirección, con esto podemos hace una consulta a la base de datos y traer los productos de la categoría.
-    
+
+## [v1.4.0] - 2024-05-28
+
+### Añadido
+
+    -Ahora cada que se elige una categoría se detecta y obtiene los productos de esa categoría.
+    -Se muestran los nombres de los productos y el precio en USD de cada producto según la categoría que se eligió.
+    -Además de que cada producto tenga su nombre y precio tiene la foto del producto, además d eun botón debajo para agregar a carrito (aún no funciona, sólo se diseñó el botón).
+    -Por último se resalta con un color ambar la categoría en la que se está.
