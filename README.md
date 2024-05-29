@@ -42,3 +42,15 @@ export default function CategoryIcon(){
     -Se muestran los nombres de los productos y el precio en USD de cada producto según la categoría que se eligió.
     -Además de que cada producto tenga su nombre y precio tiene la foto del producto, además d eun botón debajo para agregar a carrito (aún no funciona, sólo se diseñó el botón).
     -Por último se resalta con un color ambar la categoría en la que se está.
+
+## [v1.5.0] - 2024-05-29
+
+### Añadido
+
+    -Se implementa Zustand para empezar a crear el carrito.
+    -Ahora el botón de agregar ya hace su función de agregar el producto al carrito
+    -Se muestran los artículos en el carrito.
+    -no se duplican los productos, si no que se muestra la cantidad de cada producto que se pide.
+    -en el carrito ya tiene íconos de + y - para agregar o decrementar cantidad de productos desde el carrito, además de ser funcionales.
+    -ya se pueden eliminar items del carrito.
+    -Se muestra el total a pagar de toda la order.
