@@ -3,6 +3,8 @@ export default function CategoryIcon(){
         <div>CategoryIcon</div>
     )
 }
+
+PROUESTA: que el cliente pueda agregar comentarios a su orden.
 # Historial de Cambios
 
 ## [v1.0.0] - 2024-05-27
@@ -54,3 +56,14 @@ export default function CategoryIcon(){
     -en el carrito ya tiene íconos de + y - para agregar o decrementar cantidad de productos desde el carrito, además de ser funcionales.
     -ya se pueden eliminar items del carrito.
     -Se muestra el total a pagar de toda la order.
+
+## [v1.6.0] - 2024-05-29
+
+### Añadido
+
+    -se creó en la base de datos el modelo de ordenes 
+    -se le pide al usuario proporcionar su nombre
+    -hay una notificación si no se ingresa el nombre
+    -hay una notificación si hay algún error en la orden
+    -se guardan las ordenes en la base de datos.
+    -se evitan las ordenes duplicadas borrando los productos del carrito al confimar producto.
