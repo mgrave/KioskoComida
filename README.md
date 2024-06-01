@@ -75,4 +75,12 @@ PROUESTA: que el cliente pueda agregar comentarios a su orden.
     -se crean funciones de admin
     -ya está la página principal del admin
     -ya se muestran ordenes pendientes y se pueden marcar como completadas también
+
+## [v1.8.0] - 2024-05-30
+
+### Añadido
+
+    -se agregó un buscador.
+    -ya se muestran los resultados del buscador.
+    -paginador implementado.
     
