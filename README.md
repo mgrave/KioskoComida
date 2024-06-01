@@ -83,4 +83,27 @@ PROUESTA: que el cliente pueda agregar comentarios a su orden.
     -se agregó un buscador.
     -ya se muestran los resultados del buscador.
     -paginador implementado.
-    
+
+## [v1.9.0] - 2024-05-30
+
+### Añadido
+
+    -se agregó un buscador.
+    -ya se muestran los resultados del buscador.
+    -paginador implementado.
+
+## [v2.0.0] - 2024-05-30
+
+### Añadido
+
+   -Ahora se pueden crear nuevos artículos para insertarlos en la página automáticamente.
+   -los productos nuevos también se agregan en la base de datos.
+
+## [v2.1.0] - 2024-05-30
+
+### Añadido
+
+   -ahora se pueden editar productos ya creados.
+   -se guardan los cambios en la base de datos y en la página web se muestran
+
+
