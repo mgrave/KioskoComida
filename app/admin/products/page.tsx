@@ -9,6 +9,7 @@ import ProductSearchForm from '@/components/products/ProductSearchForm';
 async function productCount() {
     return await prisma.product.count()
 }
+
 async function getProducts(page: number, pageSize: number) {
 
     const skip = (page - 1) * pageSize
@@ -28,12 +29,12 @@ export type ProductsWithCategory = Awaited<ReturnType<typeof getProducts>>
 export default async function Productspage({searchParams} : { searchParams: {page: string}}) {
 
     const page = +searchParams.page || 1
-    const pageSize = 20
+    const pageSize = 10
 
     if(page < 0) redirect('/admin/products')
 
     const productsData = await getProducts(page, pageSize)
-    const totalProductosData = await productCount()
+    const totalProductosData = productCount()
     const [ products, totalProducts] = await Promise.all([productsData, totalProductosData])
     const totalPages = Math.ceil(totalProducts / pageSize)
 

@@ -102,8 +102,14 @@ PROUESTA: que el cliente pueda agregar comentarios a su orden.
 ## [v2.1.0] - 2024-05-30
 
 ### Añadido
-
    -ahora se pueden editar productos ya creados.
    -se guardan los cambios en la base de datos y en la página web se muestran
+
+## [v2.2.0] - 2024-05-30
+
+### Añadido
+   -se ha creado un endpoint para api
+   -config de swr
+
 
 
