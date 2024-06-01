@@ -67,3 +67,12 @@ PROUESTA: que el cliente pueda agregar comentarios a su orden.
     -hay una notificación si hay algún error en la orden
     -se guardan las ordenes en la base de datos.
     -se evitan las ordenes duplicadas borrando los productos del carrito al confimar producto.
+    
+## [v1.7.0] - 2024-05-30
+
+### Añadido
+
+    -se crean funciones de admin
+    -ya está la página principal del admin
+    -ya se muestran ordenes pendientes y se pueden marcar como completadas también
+    
