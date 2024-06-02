@@ -121,5 +121,12 @@ PROUESTA: que el cliente pueda agregar comentarios a su orden.
 ### Añadido
    -bugs arreglados donde no se mostraban las ordenes por hacer.
 
+## [v2.3.2] - 2024-05-30
+
+### Añadido
+   -bugs arreglados donde no se mostraban las ordenes completadas y no servía el botón para completar orden
+
+
+
 
 

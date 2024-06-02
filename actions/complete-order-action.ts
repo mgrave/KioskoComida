@@ -18,7 +18,7 @@ export async function completeOrder(formData: FormData) {
                 },
                 data: {
                     status: true,
-                    orderReadyAt: new Date(Date.now())
+                    OrderReadyAt: new Date(Date.now())
                 }
             })
 
