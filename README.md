@@ -111,5 +111,15 @@ PROUESTA: que el cliente pueda agregar comentarios a su orden.
    -se ha creado un endpoint para api
    -config de swr
 
+## [v2.3.0] - 2024-05-30
+
+### Añadido
+   -ya se muestran las ordenes listas.
+
+## [v2.3.1] - 2024-05-30
+
+### Añadido
+   -bugs arreglados donde no se mostraban las ordenes por hacer.
+
 
 

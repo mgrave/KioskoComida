@@ -1,4 +1,4 @@
-import { prisma } from "@/src/lib/prisma"
+ import { prisma } from "@/src/lib/prisma"
 import ImageUpload from "./ImageUpload"
 import { Product } from "@prisma/client"
 
@@ -7,10 +7,10 @@ async function getCategories() {
 }
 
 type ProductFormProps = {
-    product? : Product
+    product?: Product
 }
 
-export default async function ProductForm({product} : ProductFormProps) {
+export default async function ProductForm({product}: ProductFormProps) {
     const categories = await getCategories()
 
     return (
@@ -55,7 +55,7 @@ export default async function ProductForm({product} : ProductFormProps) {
                     name="categoryId"
                     defaultValue={product?.categoryId}
                 >
-                    <option value="">-- Seleccione --</option>
+                    <option value=""> -- Seleccione -- </option>
                     {categories.map(category => (
                         <option
                             key={category.id}
@@ -65,7 +65,7 @@ export default async function ProductForm({product} : ProductFormProps) {
                 </select>
             </div>
 
-            <ImageUpload
+            <ImageUpload 
                 image={product?.image}
             />
         </>

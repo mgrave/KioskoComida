@@ -3,16 +3,16 @@
 import { prisma } from "@/src/lib/prisma"
 import { OrderSchema } from "@/src/schema"
 
-export async function CreateOrder(data: unknown) {
+export async function createOrder(data: unknown) {
     const result = OrderSchema.safeParse(data)
 
     if(!result.success) {
-        return{
+        return {
             errors: result.error.issues
         }
     }
-    
-    try{
+
+    try {
         await prisma.order.create({
             data: {
                 name: result.data.name,
@@ -25,8 +25,7 @@ export async function CreateOrder(data: unknown) {
                 }
             }
         })
-
-    }catch(error){
+    } catch (error) {
         console.log(error)
     }
 }

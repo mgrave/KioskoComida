@@ -1,4 +1,4 @@
-import { create } from 'zustand'
+import { create } from 'zustand'
 import { OrderItem } from './types'
 import { Product } from '@prisma/client'
 
@@ -13,15 +13,15 @@ interface Store {
 
 export const useStore = create<Store>((set, get) => ({
     order: [],
-    addToOrder: (product) =>{
-        const {categoryId, image, ...data} =product
+    addToOrder: (product) => {
+        const {categoryId, image, ...data} = product
         let order : OrderItem[] = []
         if(get().order.find( item => item.id === product.id)) {
             order = get().order.map( item => item.id === product.id ? {
                 ...item,
                 quantity: item.quantity + 1,
                 subtotal: item.price * (item.quantity + 1)
-            } : item)
+            } : item )
         } else {
             order = [...get().order, {
                 ...data,
@@ -29,8 +29,7 @@ export const useStore = create<Store>((set, get) => ({
                 subtotal: 1 * product.price
             }]
         }
-
-        set((state) => ({
+        set(() => ({
             order
         }))
     },
@@ -40,18 +39,18 @@ export const useStore = create<Store>((set, get) => ({
                 ...item,
                 quantity: item.quantity + 1,
                 subtotal: item.price * (item.quantity + 1)
-            } : item)
+            } : item )
         }))
     },
     decreaseQuantity: (id) => {
         const order = get().order.map( item => item.id === id ? {
             ...item,
-            quantity: item.quantity -1,
-            subtotal: item.price * (item.quantity -1)
-        } : item)
+            quantity: item.quantity - 1,
+            subtotal: item.price * (item.quantity - 1)
+        } : item )
 
         set(() => ({
-
+            order
         }))
     },
     removeItem: (id) => {

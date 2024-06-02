@@ -1,12 +1,11 @@
 "use client"
 import { SearchSchema } from "@/src/schema"
 import { toast } from "react-toastify"
-
 import { useRouter } from "next/navigation"
 
-export default function ProductSearchForm(){
+export default function ProductSearchForm() {
     const router = useRouter()
-    
+ 
     const handleSearchForm = (formData: FormData) => {
         const data = {
             search: formData.get('search')
@@ -20,8 +19,9 @@ export default function ProductSearchForm(){
         }
         router.push(`/admin/products/search?search=${result.data.search}`)
     }
-    return(
-        <form 
+
+    return (
+        <form
             action={handleSearchForm}
             className="flex items-center"
         >
@@ -37,6 +37,7 @@ export default function ProductSearchForm(){
                 className="bg-indigo-600 p-2 uppercase text-white cursor-pointer"
                 value={'Buscar'}
             />
+
         </form>
     )
 }
