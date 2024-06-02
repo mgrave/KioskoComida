@@ -5,6 +5,7 @@ export const OrderSchema = z.object({
             .min(1, 'Tu Nombre es Obligatorio'),
     total: z.number()
             .min(1, 'Hay errores en la orden'),
+    comment: z.string(),
     order: z.array(z.object({
         id: z.number(),
         name: z.string(),

@@ -6,6 +6,7 @@ import ProductDetails from "./ProductDetails"
 import { formatCurrency } from "@/src/utils"
 import { createOrder } from "@/actions/create-order-action"
 import { OrderSchema } from "@/src/schema"
+import { comment } from "postcss"
 
 export default function OrderSummary() {
   const order = useStore((state) => state.order)
@@ -16,6 +17,7 @@ export default function OrderSummary() {
   const handleCreateOrder = async (formData: FormData) => {
       const data = {
         name: formData.get('name'),
+        comment: formData.get('comment'),
         total,
         order
       }
@@ -66,6 +68,13 @@ export default function OrderSummary() {
                     placeholder="Tu Nombre"
                     className="bg-white border border-gray-100 p-2 w-full"
                     name="name"
+                  />
+
+                  <input
+                    type="text"
+                    placeholder="Comentarios adicionales"
+                    className="bg-white border border-gray-100 p-2 w-full h-52"
+                    name="comment"
                   />
 
                   <input

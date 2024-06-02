@@ -105,28 +105,33 @@ PROUESTA: que el cliente pueda agregar comentarios a su orden.
    -ahora se pueden editar productos ya creados.
    -se guardan los cambios en la base de datos y en la página web se muestran
 
-## [v2.2.0] - 2024-05-30
+## [v2.2.0] - 2024-05-31
 
 ### Añadido
    -se ha creado un endpoint para api
    -config de swr
 
-## [v2.3.0] - 2024-05-30
+## [v2.3.0] - 2024-05-31
 
 ### Añadido
    -ya se muestran las ordenes listas.
 
-## [v2.3.1] - 2024-05-30
+## [v2.3.1] - 2024-05-31
 
 ### Añadido
    -bugs arreglados donde no se mostraban las ordenes por hacer.
 
-## [v2.3.2] - 2024-05-30
+## [v2.3.2] - 2024-06-01
 
 ### Añadido
    -bugs arreglados donde no se mostraban las ordenes completadas y no servía el botón para completar orden
 
+## [v2.4.0] - 2024-06-01
 
+### Añadido
+   -se ha agregado una parte para que el cliente agregue comentarios adicionales a su pedido por si necesita algo.
+   -el comentario se guarda en la base de datos.
+   -el cocinero o admin puede ver los comentarios en las order card.
 
 
 

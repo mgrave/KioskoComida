@@ -33,6 +33,7 @@ model Order {
   status Boolean @default(false)
   OrderReadyAt DateTime?
   orderProducts OrderProducts[]
+  comment String @default("")
 }
 
 model OrderProducts {

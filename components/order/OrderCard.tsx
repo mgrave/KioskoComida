@@ -28,9 +28,13 @@ export default function OrderCard({ order }: OrderCardProps) {
                         <dd className="text-sm font-medium text-gray-900">{product.product.name}</dd>
                     </div>
                 ))}
+                <div>
+                    <p className='text-2xl font-medium text-gray-900'>Comentarios adicionales: <br /> <span className="text-base">{order.comment}</span>  </p>
+                </div>
                 <div className="flex items-center justify-between border-t border-gray-200 pt-4">
                     <dt className="text-base font-medium text-gray-900">Total a Pagar:</dt>
                     <dd className="text-base font-medium text-gray-900">{formatCurrency(order.total)}</dd>
+                    
                 </div>
             </dl>
 
