@@ -4,7 +4,16 @@ export default function CategoryIcon(){
     )
 }
 
-PROUESTA: que el cliente pueda agregar comentarios a su orden.
+PROPUESTA: que el cliente pueda agregar comentarios a su orden.
+
+
+# Tecnologias
+	
+	-Next
+	-React
+	-Prisma
+	-PostgreSQL
+
 # Historial de Cambios
 
 ## [v1.0.0] - 2024-05-27
